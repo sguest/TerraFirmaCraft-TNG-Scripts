@@ -20,3 +20,13 @@
 1. Add lines with the following information on top of the script : Author, description (what the script does), Mod required (especially for mod compatibility script) and scripts required (if the scrips is dependant on recipe of a different script).
 2. Try to add comments in the script so it's easier to find things if users want to edit.
 3. For complex mods, try to split the scripts in different part, for example blocks recipe and ore processing recipe in different files, so it's easier to cherry pick part to use or not.
+
+
+<b>List of scripts</b>
+
+tfc_base :
+tfc_bibliocraft : 
+tfc_comforts : 
+tfc_dyes : 
+TFC Crushed ore : Add TFC crushed ore to help implement "ore doubling" recipe
+TFC Metal Block : Add metal block of TFC metal
