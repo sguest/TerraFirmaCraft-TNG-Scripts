@@ -23,10 +23,11 @@
 
 
 <b>List of scripts</b>
-
-tfc_base :
-tfc_bibliocraft : 
-tfc_comforts : 
-tfc_dyes : 
-TFC Crushed ore : Add TFC crushed ore to help implement "ore doubling" recipe
-TFC Metal Block : Add metal block of TFC metal
+- tfc_base :
+- tfc_bibliocraft : 
+- tfc_comforts : 
+- tfc_dyes : 
+- TFC Crushed ore : Add TFC crushed ore to help implement "ore doubling" recipe
+- TFC Metal Block : Add metal block of TFC metal
+- TFC Fishing : Enable fishing that is off by default in TFC
+- IE Ore Crushing : Crush TFC ore witn Immersive Engineering crusher to replicate "ore doubling" mecanism
