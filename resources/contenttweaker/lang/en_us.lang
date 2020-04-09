@@ -37,6 +37,13 @@ item.contenttweaker.limonite5.name=Crushed Limonite
 item.contenttweaker.sphalerite5.name=Crushed Sphalerite
 item.contenttweaker.tetrahedrite5.name=Crushed Tetrahedrite
 
+item.contenttweaker.bauxite5.name=Crushed Bauxite
+item.contenttweaker.cobaltite5.name=Crushed Cobaltite
+item.contenttweaker.native_ardite5.name=Crushed Native Ardite
+item.contenttweaker.native_osmium5.name=Crushed Native Osmium
+item.contenttweaker.stibnite5.name=Crushed Stibnite
+item.contenttweaker.wolframite5.name=Crushed Wolframite
+
 #25 units crushed ore
 item.contenttweaker.native_copper25.name=Crushed Native Copper
 item.contenttweaker.native_gold25.name=Crushed Native Gold
@@ -53,6 +60,13 @@ item.contenttweaker.limonite25.name=Crushed Limonite
 item.contenttweaker.sphalerite25.name=Crushed Sphalerite
 item.contenttweaker.tetrahedrite25.name=Crushed Tetrahedrite
 
+item.contenttweaker.bauxite25.name=Crushed Bauxite
+item.contenttweaker.cobaltite25.name=Crushed Cobaltite
+item.contenttweaker.native_ardite25.name=Crushed Native Ardite
+item.contenttweaker.native_osmium25.name=Crushed Native Osmium
+item.contenttweaker.stibnite25.name=Crushed Stibnite
+item.contenttweaker.wolframite25.name=Crushed Wolframite
+
 #50 units crushed ore
 item.contenttweaker.native_copper50.name=Crushed Native Copper
 item.contenttweaker.native_gold50.name=Crushed Native Gold
@@ -68,3 +82,10 @@ item.contenttweaker.magnetite50.name=Crushed Magnetite
 item.contenttweaker.limonite50.name=Crushed Limonite
 item.contenttweaker.sphalerite50.name=Crushed Sphalerite
 item.contenttweaker.tetrahedrite50.name=Crushed Tetrahedrite
+
+item.contenttweaker.bauxite50.name=Crushed Bauxite
+item.contenttweaker.cobaltite50.name=Crushed Cobaltite
+item.contenttweaker.native_ardite50.name=Crushed Native Ardite
+item.contenttweaker.native_osmium50.name=Crushed Native Osmium
+item.contenttweaker.stibnite50.name=Crushed Stibnite
+item.contenttweaker.wolframite50.name=Crushed Wolframite
