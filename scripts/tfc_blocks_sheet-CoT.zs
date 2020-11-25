@@ -8,6 +8,48 @@
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
 
+val metals = [
+    "bismuth",
+    "bismuth_bronze",
+    "black_bronze",
+    "brass",
+    "bronze",
+    "copper",
+    "gold",
+    "lead",
+    "nickel",
+    "rose_gold",
+    "silver",
+    "tin",
+    "zinc",
+    "sterling_silver",
+    "wrought_iron",
+    "pig_iron",
+    "steel",
+    "platinum",
+    "black_steel",
+    "blue_steel",
+    "red_steel",
+    "weak_steel",
+    "weak_blue_steel",
+    "weak_red_steel",
+    "high_carbon_steel",
+    "high_carbon_blue_steel",
+    "high_carbon_red_steel",
+    "high_carbon_black_steel",
+    "unknown"
+] as string[];
+
+var blockfactory = null;
+for item in metals {
+    blockfactory = VanillaFactory.createBlock("blocksheetmetal" + item, <blockmaterial:iron>);
+    blockfactory.setBlockHardness(5.0);
+    blockfactory.setBlockResistance(5.0);
+    blockfactory.setToolClass("pickaxe");
+    blockfactory.setToolLevel(0);
+    blockfactory.setBlockSoundType(<soundtype:metal>);
+    blockfactory.register();
+}
 
 var blocksheetmetalbismuth = VanillaFactory.createBlock("blocksheetmetalbismuth", <blockmaterial:iron>);
 blocksheetmetalbismuth.setBlockHardness(5.0);
