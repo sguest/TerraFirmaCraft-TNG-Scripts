@@ -1,7 +1,7 @@
 # TerraFirmaCraft-TNG-Scripts
 ## Scripts to make mods behave in a more TFC way ##
 <b>Steps to get the scripts running</b>
-1. You will need to add Just Enough Items & CraftTweaker 2 mods.\n
+1. You will need to add Just Enough Items & CraftTweaker 2 mods.
 2. Launch the game once after installing these mods
 3. Drop `base.zn` into the `[MODPACK]/script` folder.
 4. Drop your chosen mod from the list of other scripts.
@@ -18,15 +18,10 @@
 1. Add lines with the following information on top of the script:
 
 `#author your name here
-
 #priority desired priority (default 0)
-
 #modloaded mod required
-
 // one line description
-
 // Mod required: what mods are required
-
 // Scripts required: what scripts are required`
 
 2. Try to add comments in the script so it's easier to find things if users want to edit.
