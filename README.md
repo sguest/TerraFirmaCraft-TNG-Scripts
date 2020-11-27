@@ -5,11 +5,9 @@
 2. Launch the game once after installing these mods
 3. Drop `base.zn` into the `[MODPACK]/script` folder.
 4. Drop your chosen mod from the list of other scripts.
-5. Some scripts will have config at the top of the file. under `// ------ CONFIG ------` for some basic control.
-
 
 <b>Steps to get the scripts that add new items running</b>
-<i>ContentTweaker scripts add new block or item, the ContentTweaker scripts name finish by CT.</i>
+<i>ContentTweaker scripts add new block or item, the ContentTweaker scripts name finish by -CoT.</i>
 1. You will need to add ContentTweaker mod (and it's dependency).
 2. Launch the game once after installing the mod.
 3. Copy all the content of the resources folder in you `[MODPACK]/resources` folder.
@@ -17,7 +15,15 @@
 5. Some scripts can have dependency on other mods or scripts. Make sure you also add the required scripts and mods.
 
 <b>Steps to share new scripts</b>
-1. Add lines with the following information on top of the script : Author, description (what the script does), Mod required (especially for mod compatibility script) and scripts required (if the scrips is dependant on recipe of a different script).
+1. Add lines with the following information on top of the script:
+`#author your name here
+#priority desired priority (default 0)
+#modloaded mod required
+
+// one line description
+// Mod required: what mods are required
+// Scripts required: what scripts are required
+`
 2. Try to add comments in the script so it's easier to find things if users want to edit.
 3. For complex mods, try to split the scripts in different part, for example blocks recipe and ore processing recipe in different files, so it's easier to cherry pick part to use or not.
 
