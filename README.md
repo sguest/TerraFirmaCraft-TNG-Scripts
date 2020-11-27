@@ -16,14 +16,19 @@
 
 <b>Steps to share new scripts</b>
 1. Add lines with the following information on top of the script:
+
 `#author your name here
+
 #priority desired priority (default 0)
+
 #modloaded mod required
 
 // one line description
+
 // Mod required: what mods are required
-// Scripts required: what scripts are required
-`
+
+// Scripts required: what scripts are required`
+
 2. Try to add comments in the script so it's easier to find things if users want to edit.
 3. For complex mods, try to split the scripts in different part, for example blocks recipe and ore processing recipe in different files, so it's easier to cherry pick part to use or not.
 
