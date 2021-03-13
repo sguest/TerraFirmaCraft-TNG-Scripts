@@ -1,6 +1,6 @@
 #loader contenttweaker
 
-#modloaded TFC
+#modloaded tfc
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
