@@ -1,3 +1,6 @@
+#Wiring
+item.contenttweaker.unfiredconnectorbase.name=Unfired Connector Base
+item.contenttweaker.connectorbase.name=Connector Base
 
 #Metal block
 tile.contenttweaker.blockbismuth.name=Block of Bismuth
