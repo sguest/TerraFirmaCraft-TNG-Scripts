@@ -1,11 +1,4 @@
-#author KittenRaee
-#author Stuart-Cox
-#priority 0
 #modloaded tfc
-
-// Adds Hardened Clay into TFC.
-// Mod required : ~
-// Scripts required : ~
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -33,7 +26,7 @@ ItemRegistry.registerItemSize(<minecraft:hardened_clay>, 'HUGE', 'MEDIUM');
         ]
     );
     recipes.addShapeless(
-        "tfc_cley_ball",
+        "tfc_clay_ball",
         <minecraft:clay_ball> * 9,
         [<minecraft:clay>]
     );

@@ -2,6 +2,7 @@
 #author Alice in Game
 #priority 0
 #modloaded tfc
+#modloaded hookt
 
 // Enable fishing that is off by default because vanilla fishing can be exploited.
 // Mod required : Hookt

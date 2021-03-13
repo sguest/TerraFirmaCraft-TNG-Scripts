@@ -1,17 +1,22 @@
-#author KittenRaee
-#priority 0
-#modloaded tfc
+// Scripts required : tfc_blocks_metal-CoT
 
-// Add metal blocks of TFC metal, using TFC metal sheet texture
-// Mod required : ~
-// Scripts required : tfc_blocks_metal
+#modloaded tfc
 
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-
+function addMetal(block as IItemStack, metal as string, doubleIngot as IItemStack, oreDict as IOreDictEntry) {
+    oreDict.add(block);
+    ItemRegistry.registerItemMetal(block, metal, 800, true);
+    ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
+    //todo: disable this and add metal press instead if IE present
+    recipes.addShaped("tfc_block" + metal, block, [
+        [doubleIngot, doubleIngot],
+        [doubleIngot, doubleIngot]
+    ]);
+}
 
 val blocks = [
     <contenttweaker:blockbismuth>,
@@ -29,12 +34,10 @@ val blocks = [
     <contenttweaker:blockzinc>,
     <contenttweaker:blocksterling_silver>,
     <contenttweaker:blockwrought_iron>,
-    <contenttweaker:blocksteel>,
     <contenttweaker:blockplatinum>,
     <contenttweaker:blockblack_steel>,
     <contenttweaker:blockblue_steel>,
-    <contenttweaker:blockred_steel>,
-    <contenttweaker:blockunknown>
+    <contenttweaker:blockred_steel>
 ] as IItemStack[];
 
 val doubleIngots = [
@@ -53,12 +56,10 @@ val doubleIngots = [
     <tfc:metal/double_ingot/zinc>,
     <tfc:metal/double_ingot/sterling_silver>,
     <tfc:metal/double_ingot/wrought_iron>,
-    <tfc:metal/double_ingot/steel>,
     <tfc:metal/double_ingot/platinum>,
     <tfc:metal/double_ingot/black_steel>,
     <tfc:metal/double_ingot/blue_steel>,
-    <tfc:metal/double_ingot/red_steel>,
-    <minecraft:nether_star>
+    <tfc:metal/double_ingot/red_steel>
 ] as IItemStack[];
 
 val oreDicts = [
@@ -77,12 +78,10 @@ val oreDicts = [
     <ore:blockZinc>,
     <ore:blockSterlingSilver>,
     <ore:blockWroughtIron>,
-    <ore:blockSteel>,
     <ore:blockPlatinum>,
     <ore:blockBlackSteel>,
     <ore:blockBlueSteel>,
-    <ore:blockRedSteel>,
-    <ore:blockUnknown>
+    <ore:blockRedSteel>
 ] as IOreDictEntry[];
 
 val metals = [
@@ -101,22 +100,19 @@ val metals = [
     "zinc",
     "sterling_silver",
     "wrought_iron",
-    "steel",
     "platinum",
     "black_steel",
     "blue_steel",
-    "red_steel",
-    "unknown"
+    "red_steel"
 ] as string[];
 
 for i, block in blocks {
-    oreDicts[i].add(block);
-    ItemRegistry.registerItemMetal(block, metals[i], 800, true);
-    ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
-    recipes.addShaped("tfc_block" + metals[i], block, [
-        [doubleIngots[i], doubleIngots[i]],
-        [doubleIngots[i], doubleIngots[i]]
-    ]);
+    addMetal(block, metals[i], doubleIngots[i], oreDicts[i]);
+}
+
+// using IE steel block if present since it works better with multiblocks
+if(loadedMods.contains("immersiveengineering")) {
+    addMetal(<contenttweaker:blocksteel>, "steel", <tfc:metal/double_ingot/steel>, <ore:blockSteel>);
 }
 
 <ore:blockAnyBronze>.add(<contenttweaker:blockbismuth_bronze>, <contenttweaker:blockblack_bronze>,<contenttweaker:blockbronze>);

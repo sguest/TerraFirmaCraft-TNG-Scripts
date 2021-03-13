@@ -1,11 +1,7 @@
-#author KittenRaee
-#priority 0
-
-// Add metal blocks of TFC metal, using TFC metal sheet texture
-// Mod required : ~
-// Scripts required : tfc_blocks_metal
-
 #loader contenttweaker
+
+#modloaded tfc
+#modloaded tfcmetallum
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;

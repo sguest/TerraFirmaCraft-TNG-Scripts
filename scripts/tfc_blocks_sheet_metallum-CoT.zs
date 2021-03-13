@@ -1,11 +1,8 @@
-#author KittenRaee
-#priority 0
-
-// Add metal blocks of TFC metal, using TFC metal sheet texture
-// Mod required : ~
-// Scripts required : tfc_blocks_metal
-
 #loader contenttweaker
+
+#modloaded tfc
+#modloaded tfcmetallum
+#modloaded immersiveengineering
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
@@ -13,20 +10,16 @@ import mods.contenttweaker.Block;
 val metals = [
     "antimony",
     "lithium",
-    "constantan",
-    "electrum",
     "nickel_silver",
     "red_alloy",
     "mithril",
     "invar",
-    "aluminium",
     "aluminium_brass",
     "magnesium",
     "manganese",
     "boron",
     "magnesium_diboride",
     "thorium",
-    "uranium",
     "ardite",
     "cobalt",
     "manyullyn",

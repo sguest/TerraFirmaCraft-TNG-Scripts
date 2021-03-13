@@ -1,17 +1,12 @@
-#author KittenRaee
-#priority 0
-#modloaded tfc
+// Scripts required : tfc_blocks_metal_metallum-CoT
 
-// Add metal blocks of TFC metal, using TFC metal sheet texture
-// Mod required : ~
-// Scripts required : tfc_blocks_metal
+#modloaded tfc
+#modloaded tfcmetallum
 
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
-
-
 
 val blocks = [
     <contenttweaker:blockantimony>,
@@ -149,6 +144,7 @@ for i, block in blocks {
     oreDicts[i].add(block);
     ItemRegistry.registerItemMetal(block, metals[i], 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
+    // todo - disable these recipes and make metal press recipes instead if IE installed
     recipes.addShaped("tfc_block" + metals[i], block, [
         [doubleIngots[i], doubleIngots[i]],
         [doubleIngots[i], doubleIngots[i]]

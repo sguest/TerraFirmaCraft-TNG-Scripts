@@ -1,35 +1,31 @@
-#author KittenRaee
-#priority 0
-#modloaded tfc
+// Scripts required : tfc_blocks_sheet_metallum-CoT
 
-// Add metal blocks of TFC metal, using TFC metal sheet texture
-// Mod required : ~
-// Scripts required : tfc_blocks_metal
+#modloaded tfc
+#modloaded tfcmetallum
+#modloaded immersiveengineering
 
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-
-
 val blocks = [
     <contenttweaker:blocksheetmetalantimony>,
     <contenttweaker:blocksheetmetallithium>,
-    <contenttweaker:blocksheetmetalconstantan>,
-    <contenttweaker:blocksheetmetalelectrum>,
+    <immersiveengineering:sheetmetal:6>,    //constantan
+    <immersiveengineering:sheetmetal:7>,    //electrum
     <contenttweaker:blocksheetmetalnickel_silver>,
     <contenttweaker:blocksheetmetalred_alloy>,
     <contenttweaker:blocksheetmetalmithril>,
     <contenttweaker:blocksheetmetalinvar>,
-    <contenttweaker:blocksheetmetalaluminium>,
+    <immersiveengineering:sheetmetal:1>,    //Aluminum
     <contenttweaker:blocksheetmetalaluminium_brass>,
     <contenttweaker:blocksheetmetalmagnesium>,
     <contenttweaker:blocksheetmetalmanganese>,
     <contenttweaker:blocksheetmetalboron>,
     <contenttweaker:blocksheetmetalmagnesium_diboride>,
     <contenttweaker:blocksheetmetalthorium>,
-    <contenttweaker:blocksheetmetaluranium>,
+    <immersiveengineering:sheetmetal:5>,    //Uranium
     <contenttweaker:blocksheetmetalardite>,
     <contenttweaker:blocksheetmetalcobalt>,
     <contenttweaker:blocksheetmetalmanyullyn>,
@@ -145,12 +141,18 @@ val metals = [
     "tough"
 ] as string[];
 
+recipes.remove(<immersiveengineering:sheetmetal:1>);
+recipes.remove(<immersiveengineering:sheetmetal:5>);
+recipes.remove(<immersiveengineering:sheetmetal:6>);
+recipes.remove(<immersiveengineering:sheetmetal:7>);
+
 for i, block in blocks {
     oreDicts[i].add(block);
     ItemRegistry.registerItemMetal(block, metals[i], 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
     recipes.addShaped("tfc_blockSheetmetal" + metals[i], block, [
-        [sheets[i], sheets[i]],
-        [sheets[i], sheets[i]]
+        [null, sheets[i], null],
+        [sheets[i], null, sheets[i]],
+        [null, sheets[i], null]
     ]);
 }

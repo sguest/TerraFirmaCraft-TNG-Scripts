@@ -1,17 +1,12 @@
-#author KittenRaee
-#priority 0
-#modloaded tfc
+// Scripts required : tfc_blocks_sheet-CoT
 
-// Add metal blocks of TFC metal, using TFC metal sheet texture
-// Mod required : ~
-// Scripts required : tfc_blocks_metal
+#modloaded tfc
+#modloaded immersiveengineering
 
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
-
-
 
 val blocks = [
     <contenttweaker:blocksheetmetalbismuth>,
@@ -19,22 +14,21 @@ val blocks = [
     <contenttweaker:blocksheetmetalblack_bronze>,
     <contenttweaker:blocksheetmetalbrass>,
     <contenttweaker:blocksheetmetalbronze>,
-    <contenttweaker:blocksheetmetalcopper>,
-    <contenttweaker:blocksheetmetalgold>,
-    <contenttweaker:blocksheetmetallead>,
-    <contenttweaker:blocksheetmetalnickel>,
+    <immersiveengineering:sheetmetal:0>,    //copper
+    <immersiveengineering:sheetmetal:10>,    //gold
+    <immersiveengineering:sheetmetal:2>,    //lead
+    <immersiveengineering:sheetmetal:4>,    //nickel
     <contenttweaker:blocksheetmetalrose_gold>,
-    <contenttweaker:blocksheetmetalsilver>,
+    <immersiveengineering:sheetmetal:3>,    //silver
     <contenttweaker:blocksheetmetaltin>,
     <contenttweaker:blocksheetmetalzinc>,
     <contenttweaker:blocksheetmetalsterling_silver>,
-    <contenttweaker:blocksheetmetalwrought_iron>,
-    <contenttweaker:blocksheetmetalsteel>,
+    <immersiveengineering:sheetmetal:9>,    //iron
+    <immersiveengineering:sheetmetal:8>,    //steel
     <contenttweaker:blocksheetmetalplatinum>,
     <contenttweaker:blocksheetmetalblack_steel>,
     <contenttweaker:blocksheetmetalblue_steel>,
-    <contenttweaker:blocksheetmetalred_steel>,
-    <contenttweaker:blocksheetmetalunknown>
+    <contenttweaker:blocksheetmetalred_steel>
 ] as IItemStack[];
 
 val sheets = [
@@ -57,8 +51,7 @@ val sheets = [
     <tfc:metal/sheet/platinum>,
     <tfc:metal/sheet/black_steel>,
     <tfc:metal/sheet/blue_steel>,
-    <tfc:metal/sheet/red_steel>,
-    <minecraft:beacon>
+    <tfc:metal/sheet/red_steel>
 ] as IItemStack[];
 
 val oreDicts = [
@@ -81,8 +74,7 @@ val oreDicts = [
     <ore:blockSheetmetalPlatinum>,
     <ore:blockSheetmetalBlackSteel>,
     <ore:blockSheetmetalBlueSteel>,
-    <ore:blockSheetmetalRedSteel>,
-    <ore:blockSheetmetalUnknown>
+    <ore:blockSheetmetalRedSteel>
 ] as IOreDictEntry[];
 
 val metals = [
@@ -105,17 +97,25 @@ val metals = [
     "platinum",
     "black_steel",
     "blue_steel",
-    "red_steel",
-    "unknown"
+    "red_steel"
 ] as string[];
+
+recipes.remove(<immersiveengineering:sheetmetal:0>);
+recipes.remove(<immersiveengineering:sheetmetal:2>);
+recipes.remove(<immersiveengineering:sheetmetal:3>);
+recipes.remove(<immersiveengineering:sheetmetal:4>);
+recipes.remove(<immersiveengineering:sheetmetal:8>);
+recipes.remove(<immersiveengineering:sheetmetal:9>);
+recipes.remove(<immersiveengineering:sheetmetal:10>);
 
 for i, block in blocks {
     oreDicts[i].add(block);
     ItemRegistry.registerItemMetal(block, metals[i], 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
     recipes.addShaped("tfc_blockSheetmetal" + metals[i], block, [
-        [sheets[i], sheets[i]],
-        [sheets[i], sheets[i]]
+        [null, sheets[i], null],
+        [sheets[i], null, sheets[i]],
+        [null, sheets[i], null]
     ]);
 }
 
