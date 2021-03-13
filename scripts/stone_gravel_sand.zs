@@ -112,6 +112,7 @@ if(loadedMods.contains("tfc_decoration")) {
         <tfc_decoration:sandstone/schist>,
         <tfc_decoration:sandstone/gneiss>,
         <tfc_decoration:sandstone/marble>
+    ] as IItemStack[];
 
     val sandstonePillars = [
         <tfc_decoration:sandstone_pillar/granite>,

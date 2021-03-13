@@ -113,7 +113,7 @@ for i, block in blocks {
 
 // using IE steel block if present since it works better with multiblocks
 if(loadedMods.contains("immersiveengineering")) {
-    addMetal(<contenttweaker:blocksteel>, "steel", <tfc:metal/double_ingot/steel>, <ore:blockSteel>);
+    addMetal(<immersiveengineering:storage:8>, "steel", <tfc:metal/double_ingot/steel>, <ore:blockSteel>);
 }
 
 <ore:blockAnyBronze>.add(<contenttweaker:blockbismuth_bronze>, <contenttweaker:blockblack_bronze>,<contenttweaker:blockbronze>);
