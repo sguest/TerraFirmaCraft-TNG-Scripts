@@ -3,7 +3,7 @@
 import crafttweaker.mods.ILoadedMods;
 
 <ore:tool>.add(<tfc:wooden_bucket>);
-<ore:tool>.add(<tfc:spindle>);
+<ore:tool>.add(<tfc:spindle:*>);
 
 if(loadedMods.contains("immersiveengineering")) {
     var engineersHammer = <immersiveengineering:tool:0>;
@@ -19,5 +19,5 @@ if(loadedMods.contains("immersiveengineering")) {
 
 if(loadedMods.contains("cellars")) {
     // Temp until next build of cellars adds the ore dict
-    <ore:tool>.add(<cellars:wrought_iron_ice_saw>);
+    <ore:tool>.add(<cellars:wrought_iron_ice_saw:*>);
 }
