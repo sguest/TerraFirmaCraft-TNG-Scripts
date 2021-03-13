@@ -4,6 +4,7 @@
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
+import crafttweaker.mods.ILoadedMods;
 
 function addMetal(metal as string) {
     var blockfactory = VanillaFactory.createBlock("block" + metal, <blockmaterial:iron>);

@@ -6,6 +6,7 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Welding;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.mods.ILoadedMods;
 
 function addMetal(block as IItemStack, metal as string, doubleIngot as IItemStack, oreDict as IOreDictEntry) {
     oreDict.add(block);
