@@ -75,9 +75,9 @@ val supports = [
 
 for i, log in logs {
     ItemRegistry.registerItemSize(log, "VERY_LARGE", "MEDIUM");
-    recipes.addShapeless(lumber[i] * 8, [<ore:saw>, log]);
+    recipes.addShapeless(lumber[i] * 8, [<ore:saw>.transformDamage(), log]);
     recipes.addShaped("debark_tfc_support_" + i, supports[i] * 8, [
-        [<ore:saw>, log],
+        [<ore:saw>.transformDamage(), log],
         [null, log]
     ]);
 }
