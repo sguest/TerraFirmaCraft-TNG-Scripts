@@ -19,3 +19,10 @@ else {
         [<tfc:ceramics/fired/fire_brick>, <tfc:mortar>, <tfc:ceramics/fired/fire_brick>]
     ]);
 }
+
+recipes.remove(<immersiveengineering:stone_decoration:2>);
+recipes.addShaped("reinforced_blast_brick", <immersiveengineering:stone_decoration:2>, [
+    [<tfc:ceramics/fired/fire_brick>, <tfc:mortar>, <tfc:ceramics/fired/fire_brick>],
+    [<tfc:mortar>, <tfc:metal/sheet/steel>, <tfc:mortar>],
+    [<tfc:ceramics/fired/fire_brick>, <tfc:mortar>, <tfc:ceramics/fired/fire_brick>]
+]);
