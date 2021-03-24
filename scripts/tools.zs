@@ -16,8 +16,3 @@ if(loadedMods.contains("immersiveengineering")) {
 
     <ore:tool>.add(engineersHammer);
 }
-
-if(loadedMods.contains("cellars")) {
-    // Temp until next build of cellars adds the ore dict
-    <ore:tool>.add(<cellars:wrought_iron_ice_saw:*>);
-}
