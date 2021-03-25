@@ -12,8 +12,8 @@ if(loadedMods.contains("immersiveengineering")) {
     ItemRegistry.registerItemSize(<contenttweaker:connectorbase>, "SMALL", "LIGHT");
 
     ClayKnapping.addRecipe("unfired_connector_base", <contenttweaker:unfiredconnectorbase> * 2,
-        "XXXXX",
         "X   X",
+        "XXXXX",
         "     ",
         "X   X",
         "XXXXX");
