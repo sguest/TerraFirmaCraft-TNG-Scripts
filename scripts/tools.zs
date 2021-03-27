@@ -15,4 +15,11 @@ if(loadedMods.contains("immersiveengineering")) {
     ]);
 
     <ore:tool>.add(engineersHammer);
+
+    recipes.remove(<immersiveengineering:tool:1>);
+    recipes.addShaped("wire_cutters", <immersiveengineering:tool:1>, [
+        [<tfc:metal/knife_blade/wrought_iron>, <tfc:metal/knife_blade/wrought_iron>],
+        [<ore:stickWood>, <ore:stickWood>]
+    ]);
+    <ore:tool>.add(<immersiveengineering:tool:1>);
 }
