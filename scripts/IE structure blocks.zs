@@ -52,3 +52,17 @@ recipes.addShaped("heavy_engineering_block_2", <immersiveengineering:metal_decor
     [<minecraft:piston>, <ore:stickElectrum>, <minecraft:piston>],
     [<ore:sheetSteel>, <immersiveengineering:material:9>, <ore:sheetBlackSteel>]
 ]);
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/steel_scaffolding");
+recipes.addShaped("steel_scaffolding", <immersiveengineering:metal_decoration1:1> * 4,[
+    [<ore:stickSteel>, <ore:sheetSteel>, <ore:stickSteel>],
+    [null, <ore:stickSteel>, null],
+    [<ore:stickSteel>, null, <ore:stickSteel>],
+]);
+
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/aluminum_scaffolding");
+recipes.addShaped("aluminum_scaffolding", <immersiveengineering:metal_decoration1:5> * 4,[
+    [<ore:stickAluminium>, <ore:sheetAluminium>, <ore:stickAluminium>],
+    [null, <ore:stickAluminium>, null],
+    [<ore:stickAluminium>, null, <ore:stickAluminium>],
+]);

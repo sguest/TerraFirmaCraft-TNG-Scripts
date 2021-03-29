@@ -15,6 +15,9 @@ recipes.remove(<immersiveengineering:steel_armor_feet>);
 recipes.remove(<immersiveengineering:steel_armor_legs>);
 recipes.remove(<immersiveengineering:steel_armor_chest>);
 recipes.remove(<immersiveengineering:steel_armor_head>);
+recipes.remove(<immersiveengineering:toolbox>);
+recipes.remove(<immersiveengineering:wooden_device0>);      //wooden storage crate
+recipes.remove(<immersiveengineering:wooden_device0:5>);    //reinforced storage crate
 
 // New projector recipe because no lantern
 if(loadedMods.contains("immersivepetroleum")) {
