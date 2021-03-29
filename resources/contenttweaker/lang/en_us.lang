@@ -141,6 +141,35 @@ item.contenttweaker.spodumene25.name=Crushed Spodumene
 item.contenttweaker.thorianite25.name=Crushed Thorianite
 item.contenttweaker.zircon25.name=Crushed Zircon
 
+#100 units crushed ore
+item.contenttweaker.native_copper100.name=Native Copper Grit
+item.contenttweaker.native_gold100.name=Native Gold Grit
+item.contenttweaker.native_platinum100.name=Native Platinum Grit
+item.contenttweaker.hematite100.name=Hematite Grit
+item.contenttweaker.native_silver100.name=Native Silver Grit
+item.contenttweaker.cassiterite100.name=Cassiterite Grit
+item.contenttweaker.galena100.name=Galena Grit
+item.contenttweaker.bismuthinite100.name=Bismuthinite Grit
+item.contenttweaker.garnierite100.name=Garnierite Grit
+item.contenttweaker.malachite100.name=Malachite Grit
+item.contenttweaker.magnetite100.name=Magnetite Grit
+item.contenttweaker.limonite100.name=Limonite Grit
+item.contenttweaker.sphalerite100.name=Sphalerite Grit
+item.contenttweaker.tetrahedrite100.name=Tetrahedrite Grit
+
+item.contenttweaker.bauxite100.name=Bauxite Grit
+item.contenttweaker.cobaltite100.name=Cobaltite Grit
+item.contenttweaker.native_ardite100.name=Native Ardite Grit
+item.contenttweaker.native_osmium100.name=Native Osmium Grit
+item.contenttweaker.stibnite100.name=Stibnite Grit
+item.contenttweaker.wolframite100.name=Wolframite Grit
+item.contenttweaker.magnesite100.name=Magnesite Grit
+item.contenttweaker.pyrolusite100.name=Pyrolusite Grit
+item.contenttweaker.rutile100.name=Rutile Grit
+item.contenttweaker.spodumene100.name=Spodumene Grit
+item.contenttweaker.thorianite100.name=Thorianite Grit
+item.contenttweaker.zircon100.name=Zircon Grit
+
 item.contenttweaker.cobaltite_powder.name=Cobaltite Powder
 item.contenttweaker.ardite_powder.name=Ardite Powder
 item.contenttweaker.spodumene_powder.name=Spodumene Powder

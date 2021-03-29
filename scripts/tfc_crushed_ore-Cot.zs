@@ -49,3 +49,46 @@ sphalerite25.register();
 
 var tetrahedrite25 = VanillaFactory.createItem("tetrahedrite25");
 tetrahedrite25.register();
+
+//Add 100 units crushed ore
+var native_copper100 = VanillaFactory.createItem("native_copper100");
+native_copper100.register();
+
+var native_gold100 = VanillaFactory.createItem("native_gold100");
+native_gold100.register();
+
+var native_platinum100 = VanillaFactory.createItem("native_platinum100");
+native_platinum100.register();
+
+var hematite100 = VanillaFactory.createItem("hematite100");
+hematite100.register();
+
+var native_silver100 = VanillaFactory.createItem("native_silver100");
+native_silver100.register();
+
+var cassiterite100 = VanillaFactory.createItem("cassiterite100");
+cassiterite100.register();
+
+var galena100 = VanillaFactory.createItem("galena100");
+galena100.register();
+
+var bismuthinite100 = VanillaFactory.createItem("bismuthinite100");
+bismuthinite100.register();
+
+var garnierite100 = VanillaFactory.createItem("garnierite100");
+garnierite100.register();
+
+var malachite100 = VanillaFactory.createItem("malachite100");
+malachite100.register();
+
+var magnetite100 = VanillaFactory.createItem("magnetite100");
+magnetite100.register();
+
+var limonite100 = VanillaFactory.createItem("limonite100");
+limonite100.register();
+
+var sphalerite100 = VanillaFactory.createItem("sphalerite100");
+sphalerite100.register();
+
+var tetrahedrite100 = VanillaFactory.createItem("tetrahedrite100");
+tetrahedrite100.register();
