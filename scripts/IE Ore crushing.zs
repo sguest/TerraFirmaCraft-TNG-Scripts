@@ -71,7 +71,10 @@ mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/graphite> * 5, <tfc:ore/
 mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/charcoal> * 5, <minecraft:coal:1>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/sulfur> * 5, <tfc:ore/sulfur>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/saltpeter> * 5, <tfc:ore/saltpeter>, 2048);
+mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/fertilizer> * 5, <tfc:ore/sylvite>, 2048);
+mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/salt> * 5, <tfc:rock/rocksalt>, 2048);
+mods.immersiveengineering.Crusher.addRecipe(<tfc:metal/dust/boron> * 5, <tfc:ore/borax>, 2048);
+mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/flux> * 8, <tfc:ore/fluorite>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/lapis_lazuli> * 5, <ore:gemLapis>, 2048, <tfc:powder/sulfur>, 0.2);
 mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/coke>, <immersiveengineering:material:6>, 2048, <tfc:powder/graphite>, 0.2);
-mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/sulfur> * 5, <tfc:ore/sulfur>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<tfc:metal/dust/uranium> * 5, <tfc:ore/pitchblende>, 2048, <contenttweaker:galena25>, 0.2);
