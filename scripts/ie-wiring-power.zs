@@ -124,3 +124,28 @@ else {
         [<ore:brickStone>],
     ]);
 }
+
+val regularConveyor = <immersiveengineering:conveyor>.withTag({conveyorType:"immersiveengineering:conveyor"});
+val droppingConveyor = <immersiveengineering:conveyor>.withTag({conveyorType:"immersiveengineering:dropper"});
+val verticalConveyor = <immersiveengineering:conveyor>.withTag({conveyorType:"immersiveengineering:vertical"});
+val splittingConveyor = <immersiveengineering:conveyor>.withTag({conveyorType:"immersiveengineering:splitter"});
+recipes.removeShaped(regularConveyor);
+recipes.remove(droppingConveyor, true);
+recipes.remove(verticalConveyor, true);
+recipes.remove(splittingConveyor, true);
+recipes.addShaped("conveyor", regularConveyor * 8, [
+    [null, <ore:dustRedstone>, null],
+    [<ore:stickWroughtIron>, <tfctech:wiredraw/leather_belt>, <ore:stickWroughtIron>]
+]);
+recipes.addShaped("dropping_conveyor", droppingConveyor, [
+    [regularConveyor],
+    [<tfc:metal/trapdoor/wrought_iron>]
+]);
+recipes.addShaped("vertical_conveyor", verticalConveyor * 3, [
+    [regularConveyor, <ore:stickWroughtIron>],
+    [regularConveyor, <ore:stickWroughtIron>],
+    [regularConveyor, <ore:stickWroughtIron>]
+]);
+recipes.addShaped("splitting_conveyor", splittingConveyor * 2, [
+    [regularConveyor, <ore:stickWroughtIron>, regularConveyor]
+]);
