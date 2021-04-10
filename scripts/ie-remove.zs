@@ -22,6 +22,8 @@ recipes.remove(<immersiveengineering:material:1>);  //iron rod
 recipes.remove(<immersiveengineering:material:2>);  //steel rod
 recipes.remove(<immersiveengineering:material:3>);  //aluminium rod
 
+recipes.removeByRecipeName("immersiveengineering:metal_storage/steel_block");
+
 if(loadedMods.contains("immersiveposts")) {
     recipes.remove(<immersiveposts:metal_rods>);  //gold rod
     recipes.remove(<immersiveposts:metal_rods:1>);  //copper rod
