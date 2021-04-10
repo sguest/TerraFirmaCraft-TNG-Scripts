@@ -3,6 +3,7 @@
 
 import mods.immersiveengineering.Blueprint;
 import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.ItemRegistry;
 
 // Iron mechanical component
 recipes.remove(<immersiveengineering:material:8>);
@@ -16,6 +17,7 @@ mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineerin
 
 recipes.remove(<immersiveengineering:metal_device1:6>);
 Anvil.addRecipe("ie_pipe", <ore:sheetWroughtIron>, <immersiveengineering:metal_device1:6> * 2, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
+ItemRegistry.registerItemMetal(<immersiveengineering:metal_device1:6> , "wrought_iron", 100, true);
 
 recipes.remove(<immersiveengineering:metal_device0:5>);
 recipes.addShaped("pump", <immersiveengineering:metal_device0:5>, [
