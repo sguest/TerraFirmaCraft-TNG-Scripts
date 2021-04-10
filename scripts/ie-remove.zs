@@ -18,6 +18,20 @@ recipes.remove(<immersiveengineering:steel_armor_head>);
 recipes.remove(<immersiveengineering:toolbox>);
 recipes.remove(<immersiveengineering:wooden_device0>);      //wooden storage crate
 recipes.remove(<immersiveengineering:wooden_device0:5>);    //reinforced storage crate
+recipes.remove(<immersiveengineering:material:1>);  //iron rod
+recipes.remove(<immersiveengineering:material:2>);  //steel rod
+recipes.remove(<immersiveengineering:material:3>);  //aluminium rod
+
+if(loadedMods.contains("immersiveposts")) {
+    recipes.remove(<immersiveposts:metal_rods>);  //gold rod
+    recipes.remove(<immersiveposts:metal_rods:1>);  //copper rod
+    recipes.remove(<immersiveposts:metal_rods:2>);  //lead rod
+    recipes.remove(<immersiveposts:metal_rods:3>);  //silver rod
+    recipes.remove(<immersiveposts:metal_rods:4>);  //nickel rod
+    recipes.remove(<immersiveposts:metal_rods:5>);  //constantan rod
+    recipes.remove(<immersiveposts:metal_rods:6>);  //electrum rod
+    recipes.remove(<immersiveposts:metal_rods:7>);  //uranium rod
+}
 
 // New projector recipe because no lantern
 if(loadedMods.contains("immersivepetroleum")) {
