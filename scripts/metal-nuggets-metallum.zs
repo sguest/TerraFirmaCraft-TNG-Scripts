@@ -1,4 +1,5 @@
 #modloaded tfc
+#modloaded tfcmetallum
 
 import crafttweaker.item.IItemStack;
 
