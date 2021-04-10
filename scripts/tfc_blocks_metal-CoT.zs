@@ -35,7 +35,8 @@ val metals = [
     "platinum",
     "black_steel",
     "blue_steel",
-    "red_steel"
+    "red_steel",
+    "pig_iron"
 ] as string[];
 
 

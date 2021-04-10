@@ -38,7 +38,8 @@ val blocks = [
     <contenttweaker:blockplatinum>,
     <contenttweaker:blockblack_steel>,
     <contenttweaker:blockblue_steel>,
-    <contenttweaker:blockred_steel>
+    <contenttweaker:blockred_steel>,
+    <contenttweaker:blockpig_iron>
 ] as IItemStack[];
 
 val doubleIngots = [
@@ -60,7 +61,8 @@ val doubleIngots = [
     <tfc:metal/double_ingot/platinum>,
     <tfc:metal/double_ingot/black_steel>,
     <tfc:metal/double_ingot/blue_steel>,
-    <tfc:metal/double_ingot/red_steel>
+    <tfc:metal/double_ingot/red_steel>,
+    <tfc:metal/double_ingot/pig_iron>
 ] as IItemStack[];
 
 val oreDicts = [
@@ -82,7 +84,8 @@ val oreDicts = [
     <ore:blockPlatinum>,
     <ore:blockBlackSteel>,
     <ore:blockBlueSteel>,
-    <ore:blockRedSteel>
+    <ore:blockRedSteel>,
+    <ore:blockPigIron>
 ] as IOreDictEntry[];
 
 val metals = [
@@ -104,7 +107,8 @@ val metals = [
     "platinum",
     "black_steel",
     "blue_steel",
-    "red_steel"
+    "red_steel",
+    "pig_iron"
 ] as string[];
 
 for i, block in blocks {

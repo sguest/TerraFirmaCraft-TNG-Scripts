@@ -79,6 +79,7 @@ tile.contenttweaker.blocktungsten_steel.name=Block of Tungsten Steel
 tile.contenttweaker.blockzirconium.name=Block of Zirconium
 tile.contenttweaker.blockzircaloy.name=Block of Zircalloy
 tile.contenttweaker.blocktough.name=Block of Tough
+tile.contenttweaker.blockpig_iron.name=Block of Pig Iron
 
 #Sheetmetal block
 tile.contenttweaker.blocksheetmetalantimony.name=Antimony Sheetmetal
