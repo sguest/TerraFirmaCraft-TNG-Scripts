@@ -21,7 +21,8 @@ val ingots = [
     <tfc:metal/ingot/platinum>,
     <tfc:metal/ingot/black_steel>,
     <tfc:metal/ingot/blue_steel>,
-    <tfc:metal/ingot/red_steel>
+    <tfc:metal/ingot/red_steel>,
+    <tfc:metal/ingot/pig_iron>
 ] as IItemStack[];
 
 val nuggets = [
@@ -43,7 +44,8 @@ val nuggets = [
     <tfc:metal/nugget/platinum>,
     <tfc:metal/nugget/black_steel>,
     <tfc:metal/nugget/blue_steel>,
-    <tfc:metal/nugget/red_steel>
+    <tfc:metal/nugget/red_steel>,
+    <tfc:metal/nugget/pig_iron>
 ] as IItemStack[];
 
 val metals = [
@@ -65,7 +67,8 @@ val metals = [
     "platinum",
     "black_steel",
     "blue_steel",
-    "red_steel"
+    "red_steel",
+    "pig_iron"
 ] as string[];
 
 for i, ingot in ingots {

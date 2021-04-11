@@ -40,7 +40,7 @@ if(loadedMods.contains("immersivepetroleum")) {
     recipes.remove(<immersivepetroleum:schematic>);
     recipes.addShaped("projector", <immersivepetroleum:schematic>, [
         [<ore:blockGlass>, null, null],
-        [<tfc:metal/rod/wrought_iron>, <ore:lamp>, null],
-        [null, <tfc:metal/rod/wrought_iron>, <ore:plankTreatedWood>]
+        [<ore:stickWroughtIron>, <ore:lamp>, null],
+        [null, <ore:stickWroughtIron>, <ore:plankTreatedWood>]
     ]);
 }

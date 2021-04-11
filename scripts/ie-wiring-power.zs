@@ -15,14 +15,14 @@ recipes.remove(<immersiveengineering:material:23>);
 recipes.remove(<immersiveengineering:wooden_device1>);
 recipes.addShaped("water_wheel", <immersiveengineering:wooden_device1>, [
     [null, <immersiveengineering:material:10>, null],
-    [<immersiveengineering:material:10>, <ore:rodSteel>, <immersiveengineering:material:10>],
+    [<immersiveengineering:material:10>, <ore:stickSteel>, <immersiveengineering:material:10>],
     [null, <immersiveengineering:material:10>, null]
 ]);
 
 recipes.remove(<immersiveengineering:wooden_device1:1>);
 recipes.addShaped("windmill", <immersiveengineering:wooden_device1:1>, [
     [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
-    [<immersiveengineering:material:11>, <ore:rodIron>, <immersiveengineering:material:11>],
+    [<immersiveengineering:material:11>, <ore:stickWroughtIron>, <immersiveengineering:material:11>],
     [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]
 ]);
 
@@ -36,21 +36,21 @@ recipes.addShaped("tough_fabric", <immersiveengineering:material:5> * 2, [
 recipes.remove(<immersiveengineering:metal_decoration0>);
 recipes.addShaped("copper_coil_block", <immersiveengineering:metal_decoration0>, [
     [<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>],
-    [<immersiveengineering:wirecoil>, <ore:rodIron>, <immersiveengineering:wirecoil>],
+    [<immersiveengineering:wirecoil>, <ore:stickWroughtIron>, <immersiveengineering:wirecoil>],
     [<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>]
 ]);
 
 recipes.remove(<immersiveengineering:metal_decoration0:1>);
 recipes.addShaped("electrum_coil_block", <immersiveengineering:metal_decoration0:1>, [
     [<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>],
-    [<immersiveengineering:wirecoil:1>, <ore:rodIron>, <immersiveengineering:wirecoil:1>],
+    [<immersiveengineering:wirecoil:1>, <ore:stickWroughtIron>, <immersiveengineering:wirecoil:1>],
     [<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>]
 ]);
 
 recipes.remove(<immersiveengineering:metal_decoration0:2>);
 recipes.addShaped("high_voltage_coil_block", <immersiveengineering:metal_decoration0:2>, [
     [<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>],
-    [<immersiveengineering:wirecoil:2>, <ore:rodIron>, <immersiveengineering:wirecoil:2>],
+    [<immersiveengineering:wirecoil:2>, <ore:stickWroughtIron>, <immersiveengineering:wirecoil:2>],
     [<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>]
 ]);
 
@@ -134,8 +134,7 @@ recipes.remove(droppingConveyor, true);
 recipes.remove(verticalConveyor, true);
 recipes.remove(splittingConveyor, true);
 recipes.addShaped("conveyor", regularConveyor * 8, [
-    [null, <ore:dustRedstone>, null],
-    [<ore:stickWroughtIron>, <tfctech:wiredraw/leather_belt>, <ore:stickWroughtIron>]
+    [<tfc:brass_mechanisms>, <tfctech:wiredraw/leather_belt>, <tfc:brass_mechanisms>]
 ]);
 recipes.addShaped("dropping_conveyor", droppingConveyor, [
     [regularConveyor],

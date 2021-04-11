@@ -174,3 +174,8 @@ item.contenttweaker.zircon100.name=Zircon Grit
 item.contenttweaker.cobaltite_powder.name=Cobaltite Powder
 item.contenttweaker.ardite_powder.name=Ardite Powder
 item.contenttweaker.spodumene_powder.name=Spodumene Powder
+
+item.contenttweaker.ingot_mold.name=Metal Press Mold: Ingot
+item.contenttweaker.pipe_mold.name=Metal Press Mold: Pipe
+item.contenttweaker.lamp_mold.name=Metal Press Mold: Lamp
+item.contenttweaker.mechanism_mold.name=Metal Press Mold: Mechanism

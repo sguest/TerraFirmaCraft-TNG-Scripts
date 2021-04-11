@@ -12,11 +12,13 @@ function addMetal(block as IItemStack, metal as string, doubleIngot as IItemStac
     oreDict.add(block);
     ItemRegistry.registerItemMetal(block, metal, 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
-    //todo: disable this and add metal press instead if IE present
-    recipes.addShaped("tfc_block" + metal, block, [
-        [doubleIngot, doubleIngot],
-        [doubleIngot, doubleIngot]
-    ]);
+    if(!loadedMods.contains("immersiveengineering")) {
+        //use metal press instead if IE is present
+        recipes.addShaped("tfc_block" + metal, block, [
+            [doubleIngot, doubleIngot],
+            [doubleIngot, doubleIngot]
+        ]);
+    }
 }
 
 val blocks = [

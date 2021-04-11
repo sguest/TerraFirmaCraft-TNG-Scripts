@@ -13,7 +13,7 @@ mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineerin
 // Steel mechanical component
 recipes.remove(<immersiveengineering:material:9>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:9>);
-mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineering:material:9>, [<ore:sheetSteel>, <ore:stickCopper>]);
+mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineering:material:9>, [<ore:sheetSteel>, <tfc:brass_mechanisms>]);
 
 recipes.remove(<immersiveengineering:metal_device1:6>);
 Anvil.addRecipe("ie_pipe", <ore:sheetWroughtIron>, <immersiveengineering:metal_device1:6> * 2, 3, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");

@@ -144,9 +144,11 @@ for i, block in blocks {
     oreDicts[i].add(block);
     ItemRegistry.registerItemMetal(block, metals[i], 800, true);
     ItemRegistry.registerItemSize(block, "LARGE", "MEDIUM");
-    // todo - disable these recipes and make metal press recipes instead if IE installed
-    recipes.addShaped("tfc_block" + metals[i], block, [
-        [doubleIngots[i], doubleIngots[i]],
-        [doubleIngots[i], doubleIngots[i]]
-    ]);
+    if(!loadedMods.contains("immersiveengineering")) {
+        //use metal press instead if IE is present
+        recipes.addShaped("tfc_block" + metals[i], block, [
+            [doubleIngots[i], doubleIngots[i]],
+            [doubleIngots[i], doubleIngots[i]]
+        ]);
+    }
 }
