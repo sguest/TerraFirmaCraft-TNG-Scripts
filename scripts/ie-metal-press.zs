@@ -81,6 +81,7 @@ if(loadedMods.contains("tfctech")) {
 mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:metal_device1:6> * 2, <ore:sheetWroughtIron>, <contenttweaker:pipe_mold>, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<tfc:brass_mechanisms> * 2, <ore:ingotBrass>, <contenttweaker:mechanism_mold>, 2000);
 
+// Should have a recipe for refined bloom to ingot, but there doesn't seem to be a way to detect what kind of metal, or how much, is in a bloom
 mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/high_carbon_steel>, <ore:ingotPigIron>, <contenttweaker:ingot_mold>, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/steel>, <ore:ingotHighCarbonSteel>, <contenttweaker:ingot_mold>, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<tfc:metal/ingot/black_steel>, <ore:ingotHighCarbonBlackSteel>, <contenttweaker:ingot_mold>, 2000);
