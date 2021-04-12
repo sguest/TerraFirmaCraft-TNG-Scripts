@@ -6,6 +6,7 @@ import crafttweaker.mods.ILoadedMods;
 recipes.remove(<immersiveengineering:cloth_device:1>); //balloon
 recipes.remove(<immersiveengineering:metal_decoration2:4>); //lantern
 recipes.remove(<immersiveengineering:stone_decoration:1>); //blast brick
+recipes.remove(<immersiveengineering:stone_decoration:10>); //kiln brick
 recipes.remove(<immersiveengineering:pickaxe_steel>);
 recipes.remove(<immersiveengineering:shovel_steel>);
 recipes.remove(<immersiveengineering:axe_steel>);
